@@ -10,5 +10,5 @@ app.use(express.static('./public'));
 
 todoController(app);
 
-app.listen(8000);
-console.log("Server listening to 8000");
+app.listen(process.env.PORT || 5000);
+console.log("Server Started!");
